@@ -10,7 +10,7 @@ async function bootstrap() {
     .setDescription('API Documentation for file uplods handling')
     .build();
   const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('api', app, document);
+  SwaggerModule.setup('attachment/api', app, document);
 
   await app.listen(3016);
 }
